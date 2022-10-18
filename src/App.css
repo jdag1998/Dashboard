@@ -1,38 +1,86 @@
+*{
+  background-color: black;
+}
+
+body {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  gap: 20px;
+grid-template-columns:1fr 1fr 1fr 1fr ;   
+grid-template-rows:300px 380px ;
+color: white;
+grid-template-areas: 'sidebar reviews average-rating sentiment'
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+display: flex;
+flex-direction: column;
+padding: 70px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar{
+  grid-area: sidebar;
+}
+/* .reviews{
+  grid-area: reviews;
+} */
+/* .average-rating{
+  grid-area: sidebar;
+}
+.sentiment{
+  grid-area: sentiment;
+}
+*/
+.visitors{
+ color: white;
+ display: flex;
+ flex-direction: row;
+ height: 200px;
+justify-content: center;
+} 
+
+.avg{
+display: flex;
+border: 12px solid;
+border-color: greenyellow;
+padding: auto;
+justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rev{
+display: flex;
+border: 12px solid;
+border-color: greenyellow;
+padding: auto;
+justify-content: center;
+}
+
+.sent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 12px solid;
+  border-color: greenyellow;
+  padding: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .vs{
+    display: flex;
+    border-left: 40 cm;
+    border: 12px solid;
+    border-color: greenyellow;
+    padding: auto;
+    justify-content: center;
+    }
+  .t {
+    display: flex;
+    padding: auto;
+    margin-top: 100px;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
   }
-}
+ 
+
